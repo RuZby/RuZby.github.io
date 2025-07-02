@@ -1,0 +1,48 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4rem;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Nouveau rectangle de présentation */
+.presentation-box {
+  background-color: #333;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.presentation-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.presentation-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
